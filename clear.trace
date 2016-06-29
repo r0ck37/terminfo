@@ -1,0 +1,57 @@
+execve("/usr/bin/clear", ["clear"], [/* 36 vars */]) = 0
+brk(0)                                  = 0x8a4000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5b22d11000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=63135, ...}) = 0
+mmap(NULL, 63135, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f5b22d01000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\301\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=159200, ...}) = 0
+mmap(NULL, 2255936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5b228ca000
+mprotect(0x7f5b228ec000, 2097152, PROT_NONE) = 0
+mmap(0x7f5b22aec000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7f5b22aec000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\30\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1802936, ...}) = 0
+mmap(NULL, 3917016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f5b2250d000
+mprotect(0x7f5b226c0000, 2093056, PROT_NONE) = 0
+mmap(0x7f5b228bf000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b2000) = 0x7f5b228bf000
+mmap(0x7f5b228c5000, 17624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f5b228c5000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5b22d00000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5b22cff000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5b22cfe000
+arch_prctl(ARCH_SET_FS, 0x7f5b22cff700) = 0
+mprotect(0x7f5b228bf000, 16384, PROT_READ) = 0
+mprotect(0x7f5b22aec000, 16384, PROT_READ) = 0
+mprotect(0x600000, 4096, PROT_READ)     = 0
+mprotect(0x7f5b22d13000, 4096, PROT_READ) = 0
+munmap(0x7f5b22d01000, 63135)           = 0
+ioctl(1, SNDCTL_TMR_TIMEBASE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+brk(0)                                  = 0x8a4000
+brk(0x8c5000)                           = 0x8c5000
+stat("/home/ubuntu/.terminfo", 0x7fff116b6420) = -1 ENOENT (No such file or directory)
+stat("/etc/terminfo", {st_mode=S_IFDIR|0755, st_size=29, ...}) = 0
+access("/etc/terminfo/x/xterm", R_OK)   = -1 ENOENT (No such file or directory)
+stat("/lib/terminfo", {st_mode=S_IFDIR|0755, st_size=132, ...}) = 0
+access("/lib/terminfo/x/xterm", R_OK)   = 0
+open("/lib/terminfo/x/xterm", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3213, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5b22d10000
+read(3, "\32\1\34\0&\0\17\0\235\1Z\5xterm|X11 terminal e"..., 4096) = 3213
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7f5b22d10000, 4096)            = 0
+ioctl(1, SNDCTL_TMR_TIMEBASE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, SNDCTL_TMR_TIMEBASE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TIOCGWINSZ, {ws_row=39, ws_col=105, ws_xpixel=0, ws_ypixel=0}) = 0
+fstat(1, {st_mode=S_IFCHR|0600, st_rdev=makedev(136, 0), ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5b22d10000
+write(1, "\33[H\33[2J", 7)              = 7
+exit_group(0)                           = ?
